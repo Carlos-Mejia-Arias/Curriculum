@@ -48,5 +48,4 @@ h6 {
 	background-color: #4f4f4f;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	color: aqua;
 }
