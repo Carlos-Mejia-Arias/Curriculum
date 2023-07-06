@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background-color: black;
+	background-color: #323232;
 	font-family: "Dosis", sans-serif;
 	font-family: "Lato", sans-serif;
 	color: #fff;
@@ -39,4 +39,14 @@ h5 {
 
 h6 {
 	font-size: 1rem;
+}
+
+/* Banner inicial */
+
+.banner {
+	height: 50rem;
+	background-color: #4f4f4f;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
 }
