@@ -41,11 +41,30 @@ h6 {
 	font-size: 1rem;
 }
 
-/* Banner inicial */
+p {
+	font-size: 1.6rem;
+}
 
-.banner {
-	height: 50rem;
-	background-color: #4f4f4f;
+/* Banner inicial */
+.grid_2 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
+
+.banner_nombre {
+	margin-left: 15rem;
+	font-size: 6rem;
+	font-weight: 900;
+}
+.banner_cv {
+	margin-left: 20rem;
+	font-size: 5rem;
+	font-weight: 700;
+}
+/* Contacto*/
+/* Trabajos */
+
+ul {
+	font-size: 1.6rem;
+}
+/* Estudios */
