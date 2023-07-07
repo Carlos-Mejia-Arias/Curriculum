@@ -1,3 +1,12 @@
+:root {
+	--fondo-color: #323232;
+	--coral: coral;
+	--morado: rebeccapurple;
+	--blanco: #fff;
+	--fuente1: "Dosis", sans-serif;
+	--fuente2: "Lato", sans-serif;
+}
+
 /* efecto grid */
 .efecto {
 	background: -webkit-gradient(
@@ -68,4 +77,90 @@
 		transform: translate3d(0px, 0px, -60px);
 		box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
 	}
+}
+
+/*  Linea separadora */
+
+.efecto2 {
+	margin: 6rem 0;
+	height: 0.5rem;
+	width: 50%;
+	background: linear-gradient(110deg, coral 30%, rebeccapurple 80%), #766df4 70%;
+	background-size: 300% 100%;
+	animation: ct1 2.5s infinite linear;
+}
+@keyframes ct1 {
+	0% {
+		background-position: right;
+	}
+}
+
+/* Efecto botones */
+
+.boton {
+	font-size: 1rem;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	height: 15rem;
+}
+
+.corner-button {
+	font-family: var(--fuente1);
+	font-family: var(--fuente2);
+	letter-spacing: 0.02rem;
+	cursor: pointer;
+	background: transparent;
+	border: 0.5rem solid currentColor;
+	padding: 1.5rem 2rem;
+	font-size: 2.2rem;
+	color: var(--coral);
+	position: relative;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.corner-button:hover {
+	color: var(--morado);
+	background-color: var(--blanco);
+}
+.corner-button:hover::before {
+	width: 0;
+}
+.corner-button:hover::after {
+	height: 0;
+}
+.corner-button:active {
+	border-width: 0.25rem;
+}
+.corner-button span {
+	position: relative;
+	z-index: 2;
+}
+.corner-button::before,
+.corner-button::after {
+	content: "";
+	position: absolute;
+	background: var(--fondo-color);
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.corner-button::before {
+	width: calc(100% - 3rem);
+	height: calc(101% + 1rem);
+	top: -0.5rem;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.corner-button::after {
+	height: calc(100% - 3rem);
+	width: calc(101% + 1rem);
+	left: -0.5rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
