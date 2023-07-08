@@ -1,7 +1,7 @@
 :root {
 	--fondo-color: #323232;
-	--coral: coral;
-	--morado: rebeccapurple;
+	--naranja: #ff8c00;
+	--azul: #0066cc;
 	--blanco: #fff;
 	--fuente1: "Dosis", sans-serif;
 	--fuente2: "Lato", sans-serif;
@@ -13,10 +13,10 @@
 		linear,
 		left top,
 		left bottom,
-		from(coral),
-		to(rebeccapurple)
+		from(#ff8c00),
+		to(#0066cc)
 	);
-	background: linear-gradient(coral, rebeccapurple);
+	background: linear-gradient(#ff8c00, #0066cc);
 	border: 10px solid white;
 	min-height: 1vh;
 	box-sizing: border-box;
@@ -83,11 +83,32 @@
 
 .efecto2 {
 	margin: 6rem 0;
-	height: 0.5rem;
+	height: 0.7rem;
 	width: 50%;
-	background: linear-gradient(110deg, coral 30%, rebeccapurple 80%), #766df4 70%;
+	background: linear-gradient(110deg, #ff8c00 30%, #0066cc 80%), #766df4 70%;
 	background-size: 300% 100%;
 	animation: ct1 2.5s infinite linear;
+	border: solid 0.02rem var(--blanco);
+}
+@keyframes ct1 {
+	0% {
+		background-position: right;
+	}
+}
+
+.flex_efecto {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.efecto3 {
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+	height: 0.7rem;
+	width: 50%;
+	background: linear-gradient(110deg, #ff8c00 30%, #0066cc 80%), #766df4 70%;
+	background-size: 300% 100%;
+	animation: ct1 2.5s infinite linear;
+	border: solid 0.02rem var(--blanco);
 }
 @keyframes ct1 {
 	0% {
@@ -104,7 +125,8 @@
 	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-pack: center;
-	justify-content: center;
+	justify-content: left;
+	margin-left: 25rem;
 	height: 15rem;
 }
 
@@ -117,13 +139,13 @@
 	border: 0.5rem solid currentColor;
 	padding: 1.5rem 2rem;
 	font-size: 2.2rem;
-	color: var(--coral);
+	color: var(--naranja);
 	position: relative;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 .corner-button:hover {
-	color: var(--morado);
+	color: var(--azul);
 	background-color: var(--blanco);
 }
 .corner-button:hover::before {
