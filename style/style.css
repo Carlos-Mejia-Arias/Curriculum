@@ -1,7 +1,7 @@
 :root {
 	--fondo-color: #323232;
 	--naranja: #ff8c00;
-	--azul: #0066cc;
+	--azul: #152b45;
 	--blanco: #fff;
 	--fuente1: "Dosis", sans-serif;
 	--fuente2: "Lato", sans-serif;
@@ -62,6 +62,14 @@ span {
 	font-weight: 900;
 }
 
+/* .logo_carlos {
+	height: 15rem;
+	margin-left: 10rem;
+	background-color: var(--blanco);
+	border-radius: 1.9rem;
+	margin-top: 3rem;
+} */
+
 /* General Links */
 a {
 	text-decoration: none;
@@ -110,7 +118,7 @@ header {
 }
 
 .tel {
-	margin-left: 20rem;
+	margin-left: 10rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -119,7 +127,7 @@ header {
 }
 
 .correo {
-	margin-left: 40rem;
+	margin-left: 30rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -127,7 +135,16 @@ header {
 	margin-top: 2rem;
 }
 .linked {
-	margin-left: 60rem;
+	margin-left: 50rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3rem;
+	margin-top: 2rem;
+}
+
+.git {
+	margin-left: 70rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
