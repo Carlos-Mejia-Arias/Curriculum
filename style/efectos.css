@@ -139,13 +139,13 @@
 	border: 0.5rem solid currentColor;
 	padding: 1.5rem 2rem;
 	font-size: 2.2rem;
-	color: var(--naranja);
+	color: var(--azul);
 	position: relative;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 .corner-button:hover {
-	color: var(--azul);
+	color: var(--naranja);
 	background-color: var(--blanco);
 }
 .corner-button:hover::before {
@@ -165,7 +165,7 @@
 .corner-button::after {
 	content: "";
 	position: absolute;
-	background: var(--fondo-color);
+	background-color: var(--blanco);
 	z-index: 1;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
