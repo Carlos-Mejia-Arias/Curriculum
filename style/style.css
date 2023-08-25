@@ -1,5 +1,5 @@
 :root {
-	--fondo-color: #323232;
+	--fondo-color: #0066cc14;
 	--naranja: #ff8c00;
 	--azul: #0066cc;
 	--blanco: #fff;
@@ -256,3 +256,89 @@ progress {
 }
 
 /* ******************* Pagina FORMACIÓN ****************** */
+
+.grid_cursos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	text-align: center;
+	margin: 4rem 6rem;
+}
+
+.universidad_otros {
+	text-align: center;
+	margin: 4rem 6rem;
+}
+
+/* ******************* PAGINA EXPERIENCIA ****************** */
+
+.funciones_empl {
+	margin: 0 8rem;
+}
+
+.empr_fecha {
+	margin: 0 6rem;
+}
+
+/* ******************** PAGINA SKILLS ********************** */
+
+.grid_skills {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	text-transform: capitalize;
+}
+
+/*  ***************** PAGINA DE PROTAFOLIO ************** */
+
+.contenedor {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.nombre_empresa {
+	margin-left: 0;
+}
+.imagen_empresa {
+	height: 100px;
+	margin-left: 0;
+}
+.grid_bloque {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+/*  *******************  PAGINAS internas PORTAFOLIO ************** */
+
+.contenedor_empresa {
+	background-color: var(--fondo-color);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+	padding: 6rem 0;
+}
+
+.texto_proyecto {
+	margin: 0 10rem;
+}
+
+.texto_proyecto2 {
+	margin: 3rem 10rem;
+}
+
+.imagen_logo_banner {
+	max-width: 250px;
+}
+
+.separador_tabla {
+	display: grid;
+	grid-template-columns: 10% 90%;
+	align-items: center;
+	margin-left: 10rem;
+}
+.iconos_proyecto {
+	width: 50px;
+}
